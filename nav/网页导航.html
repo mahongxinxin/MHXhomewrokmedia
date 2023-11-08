@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>新闻导航站</title>
+    <link rel="shortcut icon" href="../logo.png" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <!-- <link rel="stylesheet" href="color.css" /> -->
+    <style>
+      ul {
+        list-style: none;
+      }
+	  
+    </style>
+  </head>
+  <body class="text-gray-950">
+    <!-- 头部 -->
+    <h1
+      class="font-sans font-bold text-2xl text-pink-950 p-8 text-center border-b border-pink-100 border-solid shadow-sm"
+      style="
+        background-image: url('https://tailwindcss.com/_next/static/media/docs@tinypng.d9e4dcdc.png');
+      "
+    >
+      中国新闻资源导航
+    </h1>
+    <div class="bg-gray-50" style="background-color:RGB(132,173,234,.2)">
+      <div class="container mx-auto p-8">
+        <div class="flex items-center gap-2 mb-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="text-pink-950"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M5 8.5A2.5 2.5 0 0 1 7.5 6H9V4.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L9.41 8.658A.25.25 0 0 1 9 8.466V7H7.5A1.5 1.5 0 0 0 6 8.5V11H5V8.5Z"
+            />
+            <path
+              fill-rule="evenodd"
+              d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435Zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134Z"
+            />
+          </svg>
+          <h2 id="home" class="underwave text-lg text-gray-500">
+            国内新闻资讯导航
+          </h2>
+        </div>
+
+        <div class="flex flex-row gap-x-16 gap-y-8 flex-wrap mb-8">
+          <div class="card">
+            <a href="http://paper.people.com.cn">
+              <div
+                class="flex items-center gap-4 w-64 bg-white p-4 rounded-lg shadow hover:shadow-lg transition-all duration-150 ease-in-out"
+				style="background-color:RGB(255,255,255,.4)"
+              >
+                <img
+                  src="https://gips0.baidu.com/it/u=938055302,1001113573&fm=3012&app=3012&autime=1696392950&size=b360,360"
+                  class="block w-12 h-12"
+                />
+                <div>
+                  <h3 class="font-bold mb-2">人民日报</h3>
+                  <p class="text-xs text-gray-400">
+                    人民日报是中国共产党中央委员会机关报，社承担着宣传党的理论和路线方针政策。
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://www.chinanews.com">
+              <div
+                class="flex items-center gap-4 w-64 h-28 bg-white p-4 rounded-lg shadow hover:shadow-lg"
+				style="background-color:RGB(255,255,255,.4)"
+              >
+                <img
+                  src="https://gips0.baidu.com/it/u=3215021191,4009076410&fm=3012&app=3012&autime=1696649880&size=b360,360"
+                  class="block w-12 h-12"
+                />
+                <div>
+                  <h3 class="font-bold mb-2">中国新闻网</h3>
+                  <p class="text-xs text-gray-400">国新闻网（简称“中新网”），由中国新闻社主办，为中央重点新闻网站。</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://news.cctv.com">
+              <div
+                class="flex items-center gap-4 w-64 bg-white p-4 rounded-lg shadow hover:shadow-lg"
+				style="background-color:RGB(255,255,255,.4)"
+              >
+                <img
+                  src="https://gips0.baidu.com/it/u=2574942231,500345190&fm=3012&app=3012&autime=1696645426&size=b360,360"
+                  class="block w-12 h-12"
+                />
+                <div>
+                  <h3 class="font-bold mb-2">央视新闻</h3>
+                  <p class="text-xs text-gray-400">
+                    央视新闻是中国重要的新闻舆论机构，是中国重要的思想文化阵地。
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://www.huanqiu.com">
+              <div
+                class="flex items-center gap-4 w-64 bg-white p-4 rounded-lg shadow hover:shadow-lg"
+				style="background-color:RGB(255,255,255,.4)"
+              >
+                <img
+                  src="	https://gips0.baidu.com/it/u=23577889,1375911668&fm=3012&app=3012&autime=1695215734&size=b360,360"
+                  class="block w-12 h-12"
+                />
+                <div>
+                  <h3 class="font-bold mb-2">环球网</h3>
+                  <p class="text-xs text-gray-400">
+                    环球网凭借强大的媒体平台和原创内容，全方位跟踪全球热点，及时传递中国声音。
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://www.thepaper.cn">
+              <div
+                class="flex items-center gap-4 w-64 bg-white p-4 rounded-lg shadow hover:shadow-lg"
+				style="background-color:RGB(255,255,255,.4)"
+              >
+                <img
+                  src="https://gips0.baidu.com/it/u=2415883029,256348205&fm=3012&app=3012&autime=1696914615&size=b360,360"
+                  class="block w-12 h-12"
+                />
+                <div>
+                  <h3 class="font-bold mb-2">澎湃新闻</h3>
+                  <p class="text-xs text-gray-400">
+                    澎湃新闻，创办于2014年，是隶属于上海报业集团的互联网资讯平台。
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://www.gmw.cn/">
+              <div
+                class="flex items-center gap-4 w-64 bg-white p-4 rounded-lg shadow hover:shadow-lg"
+				style="background-color:RGB(255,255,255,.4)"
+              >
+                <img
+                  src="https://gips0.baidu.com/it/u=3286843143,3746520924&fm=3012&app=3012&autime=1695215469&size=b360,360"
+                  class="block w-12 h-12"
+                />
+                <div>
+                  <h3 class="font-bold mb-2">光明网</h3>
+                  <p class="text-xs text-gray-400">
+                    国内最早设立的新闻网站之一，唯一一家定位于思想理论领域的中央重点新闻网站。
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+		  <div class="card">
+            <a href="https://www.gmw.cn/">
+              <div
+                class="flex items-center gap-4 w-64 bg-white p-4 rounded-lg shadow hover:shadow-lg"
+				style="background-color:RGB(255,255,255,.4)"
+              >
+                <img
+                  src="https://gips0.baidu.com/it/u=2362793285,836173972&fm=3012&app=3012&autime=1695351814&size=b360,360"
+                  class="block w-12 h-12"
+                />
+                <div>
+                  <h3 class="font-bold mb-2">新京报评论</h3>
+                  <p class="text-xs text-gray-400">
+                    新京报评论——天下功夫唯“快”不破，用快评更好地引导舆论。
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+		  <div class="card">
+            <a href="https://finance.sina.com.cn">
+              <div
+                class="flex items-center gap-4 w-64 bg-white p-4 rounded-lg shadow hover:shadow-lg"
+				style="background-color:RGB(255,255,255,.4)"
+              >
+                <img
+                  src="https://img1.baidu.com/it/u=2247194010,1717720466&fm=253&fmt=auto&app=138&f=JPEG?w=166&h=166"
+                  class="block w-12 h-12"
+                />
+                <div>
+                  <h3 class="font-bold mb-2">新浪财经</h3>
+                  <p class="text-xs text-gray-400">
+                    深深影响广大中产阶级及高端人群，专注于交易、资讯、数据、服务四大领域。
+
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+		  
+        </div>
+		
+		
+		
+		
+		
+		<div class="flex items-center gap-2 mb-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="text-pink-950"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M5 8.5A2.5 2.5 0 0 1 7.5 6H9V4.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L9.41 8.658A.25.25 0 0 1 9 8.466V7H7.5A1.5 1.5 0 0 0 6 8.5V11H5V8.5Z"
+            />
+            <path
+              fill-rule="evenodd"
+              d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435Zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134Z"
+            />
+          </svg>
+          <h2 id="home" class="underwave text-lg text-gray-500">
+            国内新闻资讯导航
+          </h2>
+        </div>
+
+        <div class="flex flex-row gap-x-16 gap-y-8 flex-wrap mb-8">
+          <div class="card">
+            <a href="http://paper.people.com.cn">
+              <div
+                class="flex items-center gap-4 w-64 bg-white p-4 rounded-lg shadow hover:shadow-lg transition-all duration-150 ease-in-out"
+				style="background-color:RGB(255,255,255,.4)"
+              >
+                <img
+                  src="https://gips0.baidu.com/it/u=938055302,1001113573&fm=3012&app=3012&autime=1696392950&size=b360,360"
+                  class="block w-12 h-12"
+                />
+                <div>
+                  <h3 class="font-bold mb-2">人民日报</h3>
+                  <p class="text-xs text-gray-400">
+                    人民日报是中国共产党中央委员会机关报，社承担着宣传党的理论和路线方针政策。
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://www.chinanews.com">
+              <div
+                class="flex items-center gap-4 w-64 h-28 bg-white p-4 rounded-lg shadow hover:shadow-lg"
+				style="background-color:RGB(255,255,255,.4)"
+              >
+                <img
+                  src="https://gips0.baidu.com/it/u=3215021191,4009076410&fm=3012&app=3012&autime=1696649880&size=b360,360"
+                  class="block w-12 h-12"
+                />
+                <div>
+                  <h3 class="font-bold mb-2">中国新闻网</h3>
+                  <p class="text-xs text-gray-400">国新闻网（简称“中新网”），由中国新闻社主办，为中央重点新闻网站。</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://news.cctv.com">
+              <div
+                class="flex items-center gap-4 w-64 bg-white p-4 rounded-lg shadow hover:shadow-lg"
+				style="background-color:RGB(255,255,255,.4)"
+              >
+                <img
+                  src="https://gips0.baidu.com/it/u=2574942231,500345190&fm=3012&app=3012&autime=1696645426&size=b360,360"
+                  class="block w-12 h-12"
+                />
+                <div>
+                  <h3 class="font-bold mb-2">央视新闻</h3>
+                  <p class="text-xs text-gray-400">
+                    央视新闻是中国重要的新闻舆论机构，是中国重要的思想文化阵地。
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://www.huanqiu.com">
+              <div
+                class="flex items-center gap-4 w-64 bg-white p-4 rounded-lg shadow hover:shadow-lg"
+				style="background-color:RGB(255,255,255,.4)"
+              >
+                <img
+                  src="	https://gips0.baidu.com/it/u=23577889,1375911668&fm=3012&app=3012&autime=1695215734&size=b360,360"
+                  class="block w-12 h-12"
+                />
+                <div>
+                  <h3 class="font-bold mb-2">环球网</h3>
+                  <p class="text-xs text-gray-400">
+                    环球网凭借强大的媒体平台和原创内容，全方位跟踪全球热点，及时传递中国声音。
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+          
+		  
+		  
+		  
+        </div>
+		
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+    
+    <!-- 页脚部分 -->
+    <footer class="bg-gray-700 flex h-20 justify-center items-center" style="background-color:RGB(132,173,234,.1)">
+      <p class="text-center text-xs text-gray-50">
+        <a>©copyright-荭芯</a>
+      </p>
+    </footer>
+  </body>
+</html>

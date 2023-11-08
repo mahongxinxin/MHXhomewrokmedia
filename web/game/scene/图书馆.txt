@@ -1,0 +1,2 @@
+changeBg:图书馆.png;
+score += 50；

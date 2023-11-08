@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>融媒体课程作业</title>
+    <script
+      src="//unpkg.byted-static.com/xgplayer/2.31.2/browser/index.js"
+      type="text/javascript"
+    ></script>
+  </head>
+  <body>
+    <div id="mse"></div>
+    <script>
+      let player = new Player({
+        id: "mse",
+        url: "https://sf1-cdn-tos.huoshanstatic.com/obj/media-fe/xgplayer_doc_video/mp4/xgplayer-demo-720p.mp4",
+      });
+    </script>
+    <div>
+      <h1>融媒体课程作业</h1>
+    </div>
+    <hr />
+    <div>
+      <p>这是一个段落</p>
+      <ol>
+        <li>第一次作业</li>
+        <li>第二次作业</li>
+        <li>第三次作业</li>
+      </ol>
+      <ul>
+        <li>条件1</li>
+        <li>条件2</li>
+        <li>条件3</li>
+      </ul>
+      <div>div元素用来标记逻辑上为一个整体的内容</div>
+    </div>
+    <div>
+      <h2>使用图片来演示绝对地址、相对地址</h2>
+      <p>绝对地址案例：</p>
+      <p>
+        <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fsafe-img.xhscdn.com%2Fbw1%2F0e898cb0-6577-42db-b111-e3bb03f402f2%3FimageView2%2F2%2Fw%2F1080%2Fformat%2Fjpg&refer=http%3A%2F%2Fsafe-img.xhscdn.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1697774315&t=a281a6267aa5051900eb012d3548b716"
+        alt="章若楠好米呀" / width="300px">
+      </p>
+      <p>相对地址案例：章若楠好米</p>
+      <p><img src="章若楠1.png" alt="章若楠好米呀 / width="200px"></p>
+      <p>相对地址案例：又是章若楠诶</p>
+      <p><img src="章若楠2.png" alt="章若楠好米呀" / width="200px"></p>
+      <p>相对地址案例：天呐尊嘟假嘟</p>
+      <p>
+        <img src="章若楠3.png" alt="西北民族大学logo" / width="200px">
+      </p>
+      <p>相对地址案例：为章若楠打call</p>
+      <p>
+        <img src="章若楠4.png" alt="西北民族大学logo" / width="200px">
+      </p>
+    </div>
+    <div>
+      <h2>内容嵌入元素</h2>
+      <p>iframe，将外部的页面嵌入到本地页面中。</p>
+      <iframe src="https://cn.bing.com" frameborder="0" width="50%"></iframe>
+      <p>
+        <iframe
+          frameborder="no"
+          border="0"
+          marginwidth="0"
+          marginheight="0"
+          width="330"
+          height="450"
+          src="//music.163.com/outchain/player?type=4&id=796347748&auto=1&height=430"
+        ></iframe>
+      </p>
+      <p>
+        <iframe
+          src="//player.bilibili.com/player.html?aid=745930045&bvid=BV1wk4y1w7qd&cid=1267543837&p=1"
+          scrolling="no"
+          border="0"
+          frameborder="no"
+          framespacing="0"
+          allowfullscreen="true"
+          width="800px"
+          height="600px"
+        >
+        </iframe>
+      </p>
+    </div>
+    <div>
+      <h2>表格元素</h2>
+      <p>table 表示表格 tr 表示行 td 单元格 th 表头单元格</p>
+      <table border="1">
+        <tr>
+          <th>单元格1</th>
+          <th>单元格1</th>
+          <th>单元格1</th>
+        </tr>
+        <tr>
+          <td>单元格1</td>
+          <td>单元格1</td>
+          <td>单元格1</td>
+        </tr>
+        <tr>
+          <td>单元格1</td>
+          <td>单元格1</td>
+          <td>单元格1</td>
+        </tr>
+      </table>
+    </div>
+    <div>表单元素</div>
+    <p>form label input button</p>
+    <form action="http://www.bing.com/search" method="get">
+      <input type="search" name="q" />
+      <input type="submit" value="搜索bing" />
+    </form>
+    <form
+      action="https://search.douban.com/book/subject_search?cat=1001&"
+      method="get"
+    >
+      <input type="search" name="search_text" />
+      <input type="submit" value="搜豆瓣读书" />
+    </form>
+    <form action="https://search.jd.com/Search" method="get">
+      <input type="search" name="keyword" />
+      <input type="submit" value="搜京东" />
+    </form>
+  </body>
+</html>
